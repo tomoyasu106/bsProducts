@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*-------------------------
+  カスタムプロパティ
+-------------------------*/
+:root {
+  --key-color:#8e44ad;
+  --sub-color:#7e349d;
+}
+
+/*-------------------------
+  初期値
+-------------------------*/
+
+body {
+  padding-top: 58px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+
+.topics p {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--key-color);
+  border: 1px solid var(--key-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--sub-color);
+  border: 1px solid var(--sub-color);
+}
+
+footer a {
+  color:  var(--key-color);
+}
+
+footer a :hover {
+  color:  var(--sub-color);
+}
+
+.topics .col-lg-4 {
+  scroll-margin-top: 50vw;
+}
